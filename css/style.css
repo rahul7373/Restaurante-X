@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s linear;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --orange: #ff7629;
+    --black: #000000;
+    --light-black: #696969;
+    --white: #ffffff;
+    --light-white: #ccc;
+    --bg: #fff9f3;
+    --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+section{
+    padding: 18rem 0;
+}
+
+.container{
+    padding: 0 3%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading{
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tittle{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.sub-tittle{
+    font-size: 1.8rem;
+    margin: 0 auto 4rem;
+    text-align: center;
+    color: gray;
+    line-height: 3rem;
+    max-width: 770px;
+}
+
+.btn1{
+    font-size: 2rem;
+    background-color: var(--white);
+    border-radius: 5rem;
+    padding: 2rem 3rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: var(--orange);
+    transform: scale(1.05);
+    color: var(--white);
+}
+
+.btn2{
+    font-size: 2rem;
+    background-color: var(--orange);
+    border-radius: 5rem;
+    padding: 2rem 3rem;
+    box-shadow: 0 0.3rem 1rem var(--orange);
+    margin: 1rem 1rem;
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    transform: scale(1.05);
+}
+
+
+/* header css starts */
+.header{
+    box-shadow: var(--shadow);
+    padding: 3rem 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 22rem;
+}
+
+.navbar .logo:hover{
+    transform: scale(1.05);
+}
+
+.navbar .nav-list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar .nav-list li a{
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
+    color: var(--black);
+}
+
+.navbar .cart{
+    font-size: 1.8rem;
+    margin-left: 1.8rem;
+    color: var(--black);
+}
+
+.navbar .cart span{
+    color: var(--orange);
+}
+
+.navbar .nav-list li a:hover{
+    color: var(--orange);
+}
+
+.header button{
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    margin-top: 0;
+}
+
+.header .menuBtn{
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    display: none;
+}
+
+/* header css ends */
+
+
+/* home section starts */
+.home{
+    background: linear-gradient(to right, var(--white) 60%, var(--orange) 40%);
+    padding: 5rem 0;
+}
+
+.home .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .text{
+    width: 45%;
+    margin-right: 3rem;
+    text-align: left;
+}
+.home .text h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.home .text h1 span{
+    color: var(--orange);
+}
+
+.home .text p{
+    text-align: left;
+}
+
+.home .image{
+    width: 50%;
+}
+
+.home .image img{
+    width: 100%;
+    transform: rotate(-3deg);
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+}
+/* home section ends */
+
+
+
+/* app css start */
+.app{
+    max-width: 1200px;
+    padding: 8rem 0;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: .1rem solid #ebe8e8;
+}
+
+.app h3{
+    padding: 5%;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.app .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app .images img{
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.app .images img:hover{
+    transform: scale(1.05);
+}
+/* app css end */
+
+
+
+/* menu css strat */
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.menu .box{
+    border: var(--border);
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.menu .box:hover{
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
+}
+
+.menu .box a{
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+/* menu css ends */
+
+/* abou css strats */
+.about{
+    background-color: var(--bg);
+}
+
+.about .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .image{
+    width: 50%;
+    position: relative;
+}
+
+.about .image img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.about .image .visit{
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    background-color: var(--white);
+    padding: 5rem 5rem;
+    text-align: left;
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.about .image .visit h4{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+
+.about .image .visit p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    margin: 1rem;
+} 
+.about .image .visit p img{
+    width: 3rem;
+}
+
+.about .text{
+    text-align: left;
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+}
+.about .text .heading{
+    text-align: left;
+}
+
+.about .text p{
+    text-align: left;
+}
+/* about css ends */
+
+
+
+
+/* menu2 css starts */
+.menu2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.menu2 .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.menu2 .box:hover .image .price{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.menu2 .box:hover .tittle{
+    color: var(--orange);
+}
+
+.menu2 .box .image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.menu2 .box .image .price{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 1.8rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    z-index: 500;
+}
+
+.menu2 .box .image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu2 .box p{
+    text-align: center;
+}
+/* menu2 css ends */
+
+
+/* taste css strats */
+.taste{
+    background-color: var(--orange);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.taste .container{
+    width: 50%;
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.taste .container hr{
+    width: 8rem;
+    height: 0.3rem;
+    background-color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.taste .container h1{
+    font-size: 3.8rem;
+    color: var(--white);
+    text-align: left;
+}
+.taste .container p{
+    color: var(--white);
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.taste .container .btn1:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.taste .container .btn2{
+    border: 0.1rem solid var(--white);
+}
+
+.taste .container .btn2:hover{
+    background-color: var(--black);
+    border: none;
+}
+
+.taste .image {
+    width: 50%;
+    overflow: hidden;
+}
+ 
+.taste .image img{
+    width: 100%;
+}
+/* taste css ends */
+
+
+/* review css start */
+.review{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 3rem;
+}
+
+.mySwiper .next{
+    background-color: var(--orange);
+    padding: 1rem !important;
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.review .box{
+    padding: 5rem 3rem;
+    max-width: 60rem;
+    min-width: 40rem;
+    text-align: left;
+    border: var(--border);
+    border-radius: 2rem;
+}
+
+.review .box i{
+    font-size: 2.5rem;
+    color: #ffbe17;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+.review .box .tittle{
+    font-weight: 700;
+}
+
+.review .box p{
+    text-align: left;
+}
+
+.review .box .user{
+    display: flex;
+    align-content: center;
+}
+
+.review .box .user img{
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box .user .text{
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.review .box .user h5{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 100%;
+    
+}
+/* review css end */
+
+/* article css strat */
+
+.our-article{
+    background-color: var(--bg);
+}
+
+.our-article .head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.article .left{
+    border: var(--border);
+    box-shadow: var(--shadow);
+    text-align: left;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.article .left:hover,
+.article .left:hover img,
+.article .left:hover .text{
+    transform: scale(1.02);
+    color: var(--orange);
+}
+
+.article .left img{
+    width: 100%;
+
+}
+
+.article .left .text{
+    padding: 5rem;
+}
+
+.article .left .text h2{
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+
+.article .left .text p{
+    text-align: left;
+    font-size: 1.8rem;
+    color: var(--light-black);
+    line-height: 3rem;
+}
+
+.article .right{
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+
+.article .right .box{
+    border: var(--border);
+    border-radius: 2rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.article .right .box:hover,
+.article .right .box:hover img,
+.article .right .box:hover .text{
+    transform: scale(1.05);
+    color: var(--orange);
+}
+
+.article .right .box img{
+    width: 100%;
+}
+
+.article .right .box .text{
+    padding: 2rem;
+}
+
+.article .right .box .text p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    text-align: left;
+}
+
+.article .right .box .text h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+/* article css end */
+
+
+
+
+/* booking css start */
+
+.booking{
+    background: linear-gradient(to right, var(--white) 57%, var(--orange) 43%);
+}
+
+
+.booking .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.booking .text{
+    width: 38%;
+}
+
+.booking .text .heading{
+    text-align: left;
+    margin-top: 7rem;
+}
+
+.booking .text p{
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.booking .text .address div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.booking .text .address div a{
+    margin: 0;
+    margin-left: 1.5rem;
+    text-align: left;
+}
+
+.booking .text .address div a:hover{
+    color: var(--orange);
+}
+
+.booking .form{
+    width: 55%;
+    background-color: var(--white);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 2rem;
+    padding: 7rem 5rem;
+}
+
+.booking .form form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.booking .form .input-box{
+    width: calc(100% / 2 - 2rem);
+    margin-bottom: 3rem;
+}
+.booking .form span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.booking .form .input-box input{
+    width: 100%;
+    border: var(--border);
+    border-radius: 3rem;
+    box-shadow: var(--shadow);
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+}
+.booking .form .note-box{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.booking .form .note-box textarea{
+    width: 100%;
+    border: var(--border);
+    border-radius: 3rem;
+    box-shadow: var(--shadow);
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+}
+
+.booking .form .input-box input:valid,
+.booking .form .input-box input:focus{
+    border: 0.1rem solid var(--orange);
+}
+
+.booking .form .note-box textarea:valid,
+.booking .form .note-box textarea:focus{
+    border: 0.1rem solid var(--orange);
+}
+
+/* booking css end */
+
+
+/* instagram css starts */
+.instagram{
+    background-color: var(--bg);
+}
+
+.instagram .head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.instagram .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.instagram .images img{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.instagram .images img:hover{
+    transform: scale(1.05);
+}
+
+.instagram .images .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 2rem), 1fr));
+    gap: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+/* instagram ends starts */
+
+
+
+
+
+/* footer starts here */
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .left{
+    width: calc(100% / 3 - 5rem);
+    text-align: left;
+}
+
+.footer .left img{
+    width: 24rem;
+}
+
+.footer .left img:hover{
+    transform: scale(1.05);
+}
+
+.footer .left p{
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.footer .left a{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--orange);
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0.8rem;
+    border-radius: 50%;
+    line-height: 3.5rem;
+}
+
+.footer .left a:hover{
+    background-color: black;
+}
+
+.footer .middle{
+    width: calc(100% / 3 - 5rem);
+    text-align: left;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.footer .middle a{
+    color: var(--light-black);
+    display: block;
+    margin-top: 2rem;
+}
+
+.footer .middle a:hover{
+    color: var(--orange);
+}
+
+.footer .right {
+    width: calc(100% / 3 - 5rem);
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer .right .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 2rem), 1fr));
+    gap: 2rem;
+}
+
+
+.footer .right .image{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.footer .right .image img{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.footer .right .image img:hover{
+    transform: scale(1.05);
+}
+/* footer ends here */
+
+
+/* foot css starts */
+.foot{
+    margin: 0 10%;
+    padding: 2.5rem;
+    border-top: var(--border);
+}
+
+.foot p{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--light-black);
+}
+
+.foot p span{
+    color: var(--orange);
+}
+/* foot css ends */
+
+
+
+
+
+
+
+
+
+/* media query for responsive */
+
+@media (max-width: 1400px){
+
+    html{
+        font-size: 58%;
+    }
+
+    .footer .left{
+        width: calc(50% - 5rem);
+    }
+
+    .footer .middle{
+        width: calc(50% - 5rem);
+    }
+
+    .footer .right {
+        width: 100%;
+    }
+
+    .footer .right .images{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}
+
+@media (max-width: 900px){
+
+    html{
+        font-size: 55%;
+    }
+
+   .navbar .nav-list{
+       position: absolute;
+       top: -1000%;
+       right: 0;
+       left: 0;
+       flex-direction: column;
+       align-items: flex-start;
+       width: 100%;
+       background-color: white;
+       z-index: 1000;
+   }
+
+   .navbar .nav-list.active{
+    top: 100%;
+   }
+
+   .navbar .nav-list li{
+       margin: 1.5rem;
+   }
+
+   .header .menuBtn{
+    display: inline-block;
+   }
+
+    .article{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 2rem;
+    }
+
+    .article .right{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    }
+
+    .booking{
+        background: linear-gradient(to bottom, var(--white) 57%, var(--orange) 43%);
+    }
+
+    .booking .text{
+        width: 60%;
+    }
+
+    .booking .form{
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media (max-width: 770px){
+
+    .home{
+        background: linear-gradient(to bottom, var(--white) 60%, var(--orange) 40%);
+    }
+
+    .home .image{
+        width: 100%;
+    }
+
+    .home .text{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5rem;
+    }
+
+    .header button{
+        display: none;
+    }
+
+    .about .container{
+        flex-direction: column-reverse;
+    }
+
+
+    .about .text{
+        width: 100%;
+        margin-bottom: 5rem;
+        padding: 0;
+    }
+
+    .about .image{
+        width: 95%;
+    }
+
+    .taste .container{
+        width: 100%;
+        margin: 8rem 0;
+    }
+
+    .taste .image{
+        width: 100%;
+    }
+
+    .taste .image img{
+        object-fit: cover;
+        object-position: 50% 20%;
+        max-height: 40rem;
+    }
+
+    .instagram .images{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .footer .left{
+        width: 100%;
+    }
+
+    .footer .middle{
+        width: 100%;
+        margin: 8rem 0;
+    }
+
+}
+
+@media (max-width: 520px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .btn1{
+        width: 100%;
+    }
+    .btn2{
+        width: 100%;
+    }
+
+    .about .image .visit{
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+
+    .article .right{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+}
