@@ -25,6 +25,20 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+    border-radius: 1rem;
 }
 
 
@@ -67,6 +81,7 @@ section{
     padding: 2rem 3rem;
     box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
     margin: 1rem 1rem;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -97,6 +112,7 @@ section{
 .header{
     box-shadow: var(--shadow);
     padding: 3rem 0;
+    position: sticky;
 }
 .header .container{
     display: flex;
@@ -309,14 +325,20 @@ section{
     margin: 1rem;
 }
 
+.about .image .visit .box{
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.about .image .visit .box img{
+    width: 3rem;
+}
 
 .about .image .visit p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--light-black);
-    margin: 1rem;
-} 
-.about .image .visit p img{
-    width: 3rem;
+    margin-left: 1rem;
 }
 
 .about .text{
@@ -445,6 +467,7 @@ section{
  
 .taste .image img{
     width: 100%;
+    display: block;
 }
 /* taste css ends */
 
@@ -456,12 +479,18 @@ section{
     margin-bottom: 3rem;
 }
 
-.mySwiper .next{
+/* .mySwiper .next{
     background-color: var(--orange);
     padding: 1rem !important;
     color: var(--white);
     border-radius: 50%;
     font-size: 1rem;
+} */
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .review .box{
@@ -509,7 +538,10 @@ section{
     font-size: 1.8rem;
     font-weight: 700;
     width: 100%;
-    
+}
+
+.review .box .user .text p{
+    margin: 0;
 }
 /* review css end */
 
@@ -633,6 +665,7 @@ section{
 }
 
 .booking .text{
+    text-align: center;
     width: 38%;
 }
 
@@ -669,7 +702,7 @@ section{
     border: var(--border);
     box-shadow: var(--shadow);
     border-radius: 2rem;
-    padding: 7rem 5rem;
+    padding: 5rem 3rem;
 }
 
 .booking .form form{
@@ -960,7 +993,8 @@ section{
     }
 
     .booking .text{
-        width: 60%;
+        max-width: 500px;
+        width: 100%;
     }
 
     .booking .form{
@@ -1045,9 +1079,11 @@ section{
 
     .btn1{
         width: 100%;
+        margin: 1rem 0;
     }
     .btn2{
         width: 100%;
+        margin: 1rem 0;
     }
 
     .about .image .visit{
@@ -1061,6 +1097,10 @@ section{
 
     .article .right{
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .booking .form .input-box{
+        width: 100%;
     }
 
 }
